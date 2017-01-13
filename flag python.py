@@ -261,8 +261,6 @@ def englishflags():
 	canada.shape("turtle")
 	canada.stamp()
 	wn.exitonclick()
-
-englishflags()
 """
 """
 def swedenflag():
@@ -343,3 +341,11 @@ def icelandflag():
 	iceland.forward(310)
 	wn.exitonclick()
 """
+
+germanfam = ["Mutter", "Vater", "Großmutter", "Großvater", "Onkel", "Tante", "Tochter", "Sohn", "Schwester", "Bruder", "Neffe", "Nichte", "Enkel", "Enkelin", "Cousin", "Cousine"]
+danishfam =  ["moder", "far", "bedstemor", "bedstefar", "onkel", "tante", "datter", "søn", "søster", "bror", "nevø", "niece", " barnebarn "," barnebarn "," fætter "," fætter "]
+dutchfam = ["moeder", "vader", "grootmoeder", "grootvader", "oom", "tante", "dochter", "zoon", "zus", "broer", "neef", "nicht", "kleinzoon", "kleindochter"]
+englishfam = ["mother", "father", "grandpa", "grandma", "uncle", "aunt", "daughter", "son", "nephew", "grandchild", "cousin"]
+swedishfam = ["mamma", "fader", "mormor", "farfar", "farbror", "moster", "dotter", "son", "syster", "broder", "brorson", "niece", "barnbarn","barnbarn","kusin","kusin"]
+norfam = ["mother", "far", "bestemor", "bestefar", "onkel", "tante", "datter", "sønn", "søster", "bror", "nevø", "niese", "barnebarn","barnebarn","fetter","fetter"]
+icefam = ["móðir", "faðir", "amma", "Afi", "frændi", "frænka", "dóttir", "sonur", "systir", "bróðir", "frændi", "frænka", " barnabarn "," barnabarn","frændi","frændi"]
