@@ -1,6 +1,8 @@
-import turtle               
-"""
+import turtle      
+from tkinter import *
+
 #german
+
 def germanflags():
 	wn = turtle.Screen()  
 	#germany
@@ -77,9 +79,9 @@ def germanflags():
 	austria.down()
 	austria.forward(200)
 	wn.exitonclick()
-"""
-"""
+
 #danish
+
 def danishflag():
 	wn = turtle.Screen()        
 	denmark = turtle.Turtle()      
@@ -97,9 +99,7 @@ def danishflag():
 	denmark.right(135)
 	denmark.forward(170)
 	wn.exitonclick()
-"""
 
-"""
 #dutch
 
 def dutchflags():
@@ -140,8 +140,7 @@ def dutchflags():
 	belgium.down()
 	belgium.forward(150)
 	wn.exitonclick()
-"""
-"""
+
 #english
 
 def englishflags():
@@ -261,8 +260,9 @@ def englishflags():
 	canada.shape("turtle")
 	canada.stamp()
 	wn.exitonclick()
-"""
-"""
+
+#swedish
+
 def swedenflag():
 	wn = turtle.Screen()        
 	sweden = turtle.Turtle()      
@@ -281,10 +281,8 @@ def swedenflag():
 	sweden.forward(170)
 	wn.exitonclick()
 
-swedenflag()
-"""
-        
-"""
+#norwegian
+
 def norwayflag():
 	wn = turtle.Screen()
 	norway = turtle.Turtle()      
@@ -312,8 +310,8 @@ def norwayflag():
 	norway.forward(310)
 	wn.exitonclick()
 
-"""
-"""
+#icelandic
+
 def icelandflag():
 	wn = turtle.Screen()        
 	iceland = turtle.Turtle()      
@@ -340,12 +338,47 @@ def icelandflag():
 	iceland.left(135)
 	iceland.forward(310)
 	wn.exitonclick()
-"""
 
 germanfam = ["Mutter", "Vater", "Großmutter", "Großvater", "Onkel", "Tante", "Tochter", "Sohn", "Schwester", "Bruder", "Neffe", "Nichte", "Enkel", "Enkelin", "Cousin", "Cousine"]
-danishfam =  ["moder", "far", "bedstemor", "bedstefar", "onkel", "tante", "datter", "søn", "søster", "bror", "nevø", "niece", " barnebarn "," barnebarn "," fætter "," fætter "]
+danishfam =  ["moder", "far", "bedstemor", "bedstefar", "onkel", "tante", "datter", "søn", "søster", "bror", "nevø", "niece", "barnebarn","barnebarn"," fætter","fætter"]
 dutchfam = ["moeder", "vader", "grootmoeder", "grootvader", "oom", "tante", "dochter", "zoon", "zus", "broer", "neef", "nicht", "kleinzoon", "kleindochter"]
 englishfam = ["mother", "father", "grandpa", "grandma", "uncle", "aunt", "daughter", "son", "nephew", "grandchild", "cousin"]
 swedishfam = ["mamma", "fader", "mormor", "farfar", "farbror", "moster", "dotter", "son", "syster", "broder", "brorson", "niece", "barnbarn","barnbarn","kusin","kusin"]
 norfam = ["mother", "far", "bestemor", "bestefar", "onkel", "tante", "datter", "sønn", "søster", "bror", "nevø", "niese", "barnebarn","barnebarn","fetter","fetter"]
-icefam = ["móðir", "faðir", "amma", "Afi", "frændi", "frænka", "dóttir", "sonur", "systir", "bróðir", "frændi", "frænka", " barnabarn "," barnabarn","frændi","frændi"]
+icefam = ["móðir", "faðir", "amma", "afi", "frændi", "frænka", "dóttir", "sonur", "systir", "bróðir", "frændi", "frænka", "barnabarn","barnabarn","frændi","frændi"]
+
+insert_word = []
+
+def show_entry_fields():
+   insert_word.append(e1.get())
+
+master = Tk()
+Label(master, text="Type in an expression for a family member in German, Danish, Dutch, English, Swedish, Norwegian or Icelandic!").grid(row=0)
+
+e1 = Entry(master)
+
+e1.grid(row=0, column=1)
+
+Button(master, text='1. Step: Submit', command=show_entry_fields).grid(row=3, column=0, sticky=W, pady=4)
+Button(master, text='2. Step: Close Window', command=master.quit).grid(row=3, column=1, sticky=W, pady=4)
+
+mainloop( )
+
+def langvisual():
+	for i in insert_word:
+		if i in germanfam:
+			print(germanflags())
+		elif i in danishfam:
+			print(danishflag())
+		elif i in dutchfam:
+			print(dutchflags())
+		elif i in englishfam:
+			print(englishflags())
+		elif i in swedishfam:
+			print(swedenflag())
+		elif i in norfam:
+			print(norwayflag())
+		elif i in icefam:
+			print(icelandflag())
+
+print(langvisual())
