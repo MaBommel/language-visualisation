@@ -1,10 +1,83 @@
 import turtle      
 from tkinter import *
+import time
+
+def belgiumflag():										#This function will be needed fo the flagscreens for the languages German and Dutch
+		belgium = turtle.Turtle()
+		belgium.speed(10)
+		belgium.color("black")
+		belgium.up()
+		belgium.forward(100)
+		belgium.right(90)
+		belgium.forward(-250)
+		belgium.down()
+		belgium.pensize(50)
+		belgium.forward(150)
+		belgium.up()
+		belgium.left(90)
+		belgium.forward(50)
+		belgium.left(90)
+		belgium.color("gold")
+		belgium.down()
+		belgium.forward(150)
+		belgium.up()
+		belgium.right(90)
+		belgium.forward(50)
+		belgium.right(90)
+		belgium.color("red")
+		belgium.down()
+		belgium.forward(150)
+
+#danish
+
+def danishflag():
+	wn = turtle.Screen()     
+	turtle.title("Flags of countries in which Danish is spoken")   
+	denmark = turtle.Turtle()      
+	denmark.color("red")
+	denmark.pensize(200)
+	denmark.forward(150)
+	denmark.color("white")
+	denmark.pensize(40)
+	denmark.forward(80)
+	denmark.forward(-310)
+	denmark.up()
+	denmark.left(45)
+	denmark.forward(120)
+	denmark.down()
+	denmark.right(135)
+	denmark.forward(170)
+	#wn.exitonclick()
+
+#dutch
+
+def dutchflags():
+	wn = turtle.Screen()
+	turtle.title("Flags of countries in which Dutch is spoken")
+	#holland
+	holland = turtle.Turtle() 
+	holland.color("red")
+	holland.pensize(50)
+	holland.up()
+	holland.forward(-250)
+	holland.down()
+	holland.forward(150)
+	holland.right(90)
+	holland.up()
+	holland.forward(100)
+	holland.right(90)
+	holland.color("blue")
+	holland.down()
+	holland.forward(150)
+	#belgium
+	belgiumflag()
+	#wn.exitonclick()
 
 #german
 
 def germanflags():
-	wn = turtle.Screen()  
+	wn = turtle.Screen() 
+	turtle.title("Flags of countries in which German is spoken")
 	#germany
 	germany = turtle.Turtle()      
 	germany.speed(10)
@@ -28,7 +101,9 @@ def germanflags():
 	germany.left(90)
 	germany.down()
 	germany.forward(200)
+
 	#switzerland
+	
 	switzer = turtle.Turtle()
 	switzer.speed(10)
 	switzer.up()
@@ -78,73 +153,15 @@ def germanflags():
 	austria.left(90)
 	austria.down()
 	austria.forward(200)
-	wn.exitonclick()
-
-#danish
-
-def danishflag():
-	wn = turtle.Screen()        
-	denmark = turtle.Turtle()      
-	denmark.color("red")
-	denmark.pensize(200)
-	denmark.forward(150)
-	denmark.color("white")
-	denmark.pensize(40)
-	denmark.forward(80)
-	denmark.forward(-310)
-	denmark.up()
-	denmark.left(45)
-	denmark.forward(120)
-	denmark.down()
-	denmark.right(135)
-	denmark.forward(170)
-	wn.exitonclick()
-
-#dutch
-
-def dutchflags():
-	wn = turtle.Screen()
-	#holland
-	holland = turtle.Turtle() 
-	holland.color("red")
-	holland.pensize(50)
-	holland.up()
-	holland.forward(-250)
-	holland.down()
-	holland.forward(150)
-	holland.right(90)
-	holland.up()
-	holland.forward(100)
-	holland.right(90)
-	holland.color("blue")
-	holland.down()
-	holland.forward(150)
 	#belgium
-	belgium = turtle.Turtle()
-	belgium.color("black")
-	belgium.right(90)
-	belgium.pensize(50)
-	belgium.forward(150)
-	belgium.up()
-	belgium.left(90)
-	belgium.forward(50)
-	belgium.left(90)
-	belgium.color("gold")
-	belgium.down()
-	belgium.forward(150)
-	belgium.up()
-	belgium.right(90)
-	belgium.forward(50)
-	belgium.right(90)
-	belgium.color("red")
-	belgium.down()
-	belgium.forward(150)
-	wn.exitonclick()
+	belgiumflag()
+	#wn.exitonclick()
 
 #english
 
 def englishflags():
 	wn = turtle.Screen()
+	turtle.title("Flags of countries in which English is spoken")
 	#uk
 	uk = turtle.Turtle()
 	uk.speed(10)
@@ -259,12 +276,13 @@ def englishflags():
 	canada.color("red")
 	canada.shape("turtle")
 	canada.stamp()
-	wn.exitonclick()
+	#wn.exitonclick()
 
 #swedish
 
 def swedenflag():
-	wn = turtle.Screen()        
+	wn = turtle.Screen()   
+	turtle.title("Flags of countries in which Swedish is spoken")     
 	sweden = turtle.Turtle()      
 	sweden.color("blue")
 	sweden.pensize(200)
@@ -279,12 +297,13 @@ def swedenflag():
 	sweden.down()
 	sweden.right(135)
 	sweden.forward(170)
-	wn.exitonclick()
+	#wn.exitonclick()
 
 #norwegian
 
 def norwayflag():
 	wn = turtle.Screen()
+	turtle.title("Flags of countries in which Norwegian is spoken")
 	norway = turtle.Turtle()      
 	norway.color("red")
 	norway.pensize(200)
@@ -308,12 +327,13 @@ def norwayflag():
 	norway.down()
 	norway.left(135)
 	norway.forward(310)
-	wn.exitonclick()
+	# wn.exitonclick()
 
 #icelandic
 
 def icelandflag():
-	wn = turtle.Screen()        
+	wn = turtle.Screen() 
+	turtle.title("Flags of countries in which Icelandic is spoken")       
 	iceland = turtle.Turtle()      
 	iceland.color("blue")
 	iceland.pensize(200)
@@ -337,15 +357,19 @@ def icelandflag():
 	iceland.down()
 	iceland.left(135)
 	iceland.forward(310)
-	wn.exitonclick()
+	# wn.exitonclick()
 
-germanfam = ["Mutter", "Vater", "Großmutter", "Großvater", "Onkel", "Tante", "Tochter", "Sohn", "Schwester", "Bruder", "Neffe", "Nichte", "Enkel", "Enkelin", "Cousin", "Cousine"]
-danishfam =  ["moder", "far", "bedstemor", "bedstefar", "onkel", "tante", "datter", "søn", "søster", "bror", "nevø", "niece", "barnebarn","barnebarn"," fætter","fætter"]
+#afrikaans
+	
+
+danishfam = ["moder", "far", "bedstemor", "bedstefar", "onkel", "tante", "datter", "søn", "søster", "bror", "nevø", "niece", "barnebarn", "fætter"]
 dutchfam = ["moeder", "vader", "grootmoeder", "grootvader", "oom", "tante", "dochter", "zoon", "zus", "broer", "neef", "nicht", "kleinzoon", "kleindochter"]
-englishfam = ["mother", "father", "grandpa", "grandma", "uncle", "aunt", "daughter", "son", "nephew", "grandchild", "cousin"]
-swedishfam = ["mamma", "fader", "mormor", "farfar", "farbror", "moster", "dotter", "son", "syster", "broder", "brorson", "niece", "barnbarn","barnbarn","kusin","kusin"]
-norfam = ["mother", "far", "bestemor", "bestefar", "onkel", "tante", "datter", "sønn", "søster", "bror", "nevø", "niese", "barnebarn","barnebarn","fetter","fetter"]
-icefam = ["móðir", "faðir", "amma", "afi", "frændi", "frænka", "dóttir", "sonur", "systir", "bróðir", "frændi", "frænka", "barnabarn","barnabarn","frændi","frændi"]
+germanfam = ["Mutter", "Vater", "Großmutter", "Großvater", "Onkel", "Tante", "Tochter", "Sohn", "Schwester", "Bruder", "Neffe", "Nichte", "Enkel", "Enkelin", "Cousin", "Cousine"]
+englishfam = ["mother", "father", "grandpa", "grandma", "uncle", "aunt", "daughter", "sister", "brother", "son", "niece", "nephew", "grandchild", "cousin"]
+swedishfam = ["mamma", "fader", "mormor", "farfar", "farbror", "moster", "dotter", "son", "syster", "broder", "brorson", "niece", "barnbarn", "kusin"]
+norfam = ["mother", "far", "bestemor", "bestefar", "onkel", "tante", "datter", "sønn", "søster", "bror", "nevø", "niese", "barnebarn", "fetter"]
+icefam = ["móðir", "faðir", "amma", "afi", "frændi", "frænka", "dóttir", "sonur", "systir", "bróðir", "frændi", "frænka", "barnabarn","frændi"]
+afrikaansfam = ["Moeder", "vader", "ouma", "Oupa", "oom", "tannie", "dogter", "seun", "suster", "broer", "neef", "niggie", "kleinseun","kleindogter","neef","neef"]
 
 insert_word = []
 
@@ -359,8 +383,8 @@ e1 = Entry(master)
 
 e1.grid(row=0, column=1)
 
-Button(master, text='1. Step: Submit', command=show_entry_fields).grid(row=3, column=0, sticky=W, pady=4)
-Button(master, text='2. Step: Close Window', command=master.quit).grid(row=3, column=1, sticky=W, pady=4)
+Button(master, text='1. Step: Submit', command=show_entry_fields).grid(row=3, column=1, sticky=W, pady=4)
+Button(master, text='2. Step: Show flag', command=master.quit).grid(row=3, column=0, sticky=W, pady=4)
 
 mainloop( )
 
@@ -368,17 +392,30 @@ def langvisual():
 	for i in insert_word:
 		if i in germanfam:
 			print(germanflags())
-		elif i in danishfam:
+			time.sleep(3)
+		if i in danishfam:
+			turtle.clearscreen()
 			print(danishflag())
-		elif i in dutchfam:
+			time.sleep(3)
+		if i in dutchfam:
+			turtle.clearscreen()
 			print(dutchflags())
-		elif i in englishfam:
+			time.sleep(3)
+		if i in englishfam:
+			turtle.clearscreen()
 			print(englishflags())
-		elif i in swedishfam:
+			time.sleep(3)
+		if i in swedishfam:
+			turtle.clearscreen()
 			print(swedenflag())
-		elif i in norfam:
+			time.sleep(3)
+		if i in norfam:
+			turtle.clearscreen()
 			print(norwayflag())
-		elif i in icefam:
+			time.sleep(3)
+		if i in icefam:
+			turtle.clearscreen()
 			print(icelandflag())
+			time.sleep(3)
 
 print(langvisual())
