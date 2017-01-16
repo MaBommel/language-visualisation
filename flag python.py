@@ -47,6 +47,7 @@ def danishflag():
 	denmark.down()
 	denmark.right(135)
 	denmark.forward(170)
+	#wn.exitonclick()
 
 #dutch
 
@@ -70,6 +71,7 @@ def dutchflags():
 	holland.forward(150)
 	#belgium
 	belgiumflag()
+	#wn.exitonclick()
 
 #german
 
@@ -153,6 +155,7 @@ def germanflags():
 	austria.forward(200)
 	#belgium
 	belgiumflag()
+	#wn.exitonclick()
 
 #english
 
@@ -273,6 +276,7 @@ def englishflags():
 	canada.color("red")
 	canada.shape("turtle")
 	canada.stamp()
+	#wn.exitonclick()
 
 #swedish
 
@@ -293,6 +297,7 @@ def swedenflag():
 	sweden.down()
 	sweden.right(135)
 	sweden.forward(170)
+	#wn.exitonclick()
 
 #norwegian
 
@@ -322,6 +327,7 @@ def norwayflag():
 	norway.down()
 	norway.left(135)
 	norway.forward(310)
+	# wn.exitonclick()
 
 #icelandic
 
@@ -351,18 +357,10 @@ def icelandflag():
 	iceland.down()
 	iceland.left(135)
 	iceland.forward(310)
+	# wn.exitonclick()
 
 #afrikaans
-
-def falseentry():
-	wn = turtle.Screen()
-	wn.bgcolor("red")
-	false = turtle.Turtle()
-	false.ht()
-	false.up()
-	false.forward(-120)      
-	false.write("False Entry!", font=("Arial", 33, "bold"))
-	time.sleep(3)
+	
 
 danishfam = ["moder", "far", "bedstemor", "bedstefar", "onkel", "tante", "datter", "søn", "søster", "bror", "nevø", "niece", "barnebarn", "fætter"]
 dutchfam = ["moeder", "vader", "grootmoeder", "grootvader", "oom", "tante", "dochter", "zoon", "zus", "broer", "neef", "nicht", "kleinzoon", "kleindochter"]
@@ -371,7 +369,7 @@ englishfam = ["mother", "father", "grandpa", "grandma", "uncle", "aunt", "daught
 swedishfam = ["mamma", "fader", "mormor", "farfar", "farbror", "moster", "dotter", "son", "syster", "broder", "brorson", "niece", "barnbarn", "kusin"]
 norfam = ["mother", "far", "bestemor", "bestefar", "onkel", "tante", "datter", "sønn", "søster", "bror", "nevø", "niese", "barnebarn", "fetter"]
 icefam = ["móðir", "faðir", "amma", "afi", "frændi", "frænka", "dóttir", "sonur", "systir", "bróðir", "frændi", "frænka", "barnabarn","frændi"]
-#afrikaansfam = ["Moeder", "vader", "ouma", "Oupa", "oom", "tannie", "dogter", "seun", "suster", "broer", "neef", "niggie", "kleinseun","kleindogter","neef","neef"]
+afrikaansfam = ["Moeder", "vader", "ouma", "Oupa", "oom", "tannie", "dogter", "seun", "suster", "broer", "neef", "niggie", "kleinseun","kleindogter","neef","neef"]
 
 insert_word = []
 
@@ -389,8 +387,6 @@ Button(master, text='1. Step: Submit', command=show_entry_fields).grid(row=3, co
 Button(master, text='2. Step: Show flag', command=master.quit).grid(row=3, column=0, sticky=W, pady=4)
 
 mainloop( )
-
-langlist = [danishfam, dutchfam, germanfam, englishfam, swedishfam, norfam, icefam]
 
 def langvisual():
 	for i in insert_word:
@@ -421,7 +417,5 @@ def langvisual():
 			turtle.clearscreen()
 			print(icelandflag())
 			time.sleep(3)
-		if i not in langlist:
-			print(falseentry())
 
 print(langvisual())
