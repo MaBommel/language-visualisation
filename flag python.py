@@ -24,7 +24,7 @@ def belgiumflag():
 	belgium.down()
 	belgium.forward(150)
 
-#saouthafrica - gets its own function because it is going to be used more thanc once
+#southafrica - gets its own function because it is going to be used more thanc once
 def southafriflag():
 	wn = turtle.Screen()
 	southafri = turtle.Turtle()
@@ -186,14 +186,14 @@ def germanflags():
 
 def englishflags():
 	wn = turtle.Screen()
-	turtle.title("Flags of countries in which English is spoken")
+	turtle.title("Flags of some countries in which English is spoken")
 
 	#uk
 	uk = turtle.Turtle()
 	uk.speed(10)
 	uk.color("blue")
 	uk.up()
-	uk.goto(-210,100)
+	uk.goto(-230,100)
 	uk.pensize(200)
 	uk.down()
 	uk.forward(150)
@@ -201,34 +201,34 @@ def englishflags():
 	uk.goto(0,175)
 	uk.color("white")
 	uk.down()
-	uk.goto(-290,10)
+	uk.goto(-310,10)
 	uk.up()
-	uk.goto(-290,190)
+	uk.goto(-310,190)
 	uk.down()
 	uk.goto(0,0)
 	uk.up()
-	uk.goto(-135,200)
+	uk.goto(-155,200)
 	uk.down()
-	uk.goto(-135,0)
+	uk.goto(-155,0)
 	uk.up()
-	uk.goto(-300,100)
+	uk.goto(-320,100)
 	uk.down()
-	uk.goto(20,100)
+	uk.goto(40,100)
 	uk.color("red")
 	uk.pensize(20)
-	uk.goto(-300,100)
+	uk.goto(-320,100)
 	uk.up()
-	uk.goto(-135,0)
+	uk.goto(-155,0)
 	uk.down()
-	uk.goto(-135,200)
+	uk.goto(-155,200)
 	uk.up()
-	uk.goto(0,175)
+	uk.goto(20,175)
 	uk.down()
-	uk.goto(-290,10)
+	uk.goto(-310,10)
 	uk.up()
-	uk.goto(-290,190)
+	uk.goto(-310,190)
 	uk.down()
-	uk.goto(0,0)
+	uk.goto(-20,0)
 
 	#us
 	us = turtle.Turtle()
@@ -363,7 +363,7 @@ def icelandflag():
 
 #afrikaans
 
-def afrikaans():
+def afrikaansflag():
 	wn = turtle.Screen()
 	turtle.title("Flags of countries in which Afrikaans is spoken") 
 
@@ -416,16 +416,25 @@ def falseentry():
 	false.write("False Entry!", font=("Arial", 33, "bold"))
 	time.sleep(3)
 
-danishfam = ["moder", "far", "bedstemor", "bedstefar", "onkel", "tante", "datter", "søn", "søster", "bror", "nevø", "niece", "barnebarn", "fætter"]
-dutchfam = ["moeder", "vader", "grootmoeder", "grootvader", "oom", "tante", "dochter", "zoon", "zus", "broer", "neef", "nicht", "kleinzoon", "kleindochter"]
-germanfam = ["Mutter", "Vater", "Großmutter", "Großvater", "Onkel", "Tante", "Tochter", "Sohn", "Schwester", "Bruder", "Neffe", "Nichte", "Enkel", "Enkelin", "Cousin", "Cousine"]
-englishfam = ["mother", "father", "grandpa", "grandma", "uncle", "aunt", "daughter", "sister", "brother", "son", "niece", "nephew", "grandchild", "cousin"]
-swedishfam = ["mamma", "fader", "mormor", "farfar", "farbror", "moster", "dotter", "son", "syster", "broder", "brorson", "niece", "barnbarn", "kusin"]
-norfam = ["mother", "far", "bestemor", "bestefar", "onkel", "tante", "datter", "sønn", "søster", "bror", "nevø", "niese", "barnebarn", "fetter"]
-icefam = ["móðir", "faðir", "amma", "afi", "frændi", "frænka", "dóttir", "sonur", "systir", "bróðir", "frændi", "frænka", "barnabarn","frændi"]
-afrikaansfam = ["Moeder", "vader", "ouma", "Oupa", "oom", "tannie", "dogter", "seun", "suster", "broer", "neef", "niggie", "kleinseun","kleindogter","neef","neef"]
-
-langlist = [[danishfam], [dutchfam], [germanfam], [englishfam], [swedishfam], [norfam], [icefam]]
+danishfam = ["moder", "far", "bedstemor", "bedstefar", "onkel", "tante",
+ "datter", "søn", "søster", "bror", "nevø", "niece", "barnebarn", "fætter"]
+dutchfam = ["moeder", "vader", "grootmoeder", "grootvader", "oom", "tante",
+ "dochter", "zoon", "zus", "broer", "neef", "nicht", "kleinzoon", "kleindochter"]
+germanfam = ["Mutter", "Vater", "Großmutter", "Großvater", "Onkel", "Tante",
+"Tochter", "Sohn", "Schwester", "Bruder", "Neffe", "Nichte", "Enkel", "Enkelin",
+ "Cousin", "Cousine"]
+englishfam = ["mother", "father", "grandpa", "grandma", "uncle", "aunt",
+ "daughter", "sister", "brother", "son", "niece", "nephew", "grandchild",
+  "cousin"]
+swedishfam = ["mamma", "fader", "mormor", "farfar", "farbror", "moster", "dotter",
+ "son", "syster", "broder", "brorson", "niece", "barnbarn", "kusin"]
+norfam = ["mother", "far", "bestemor", "bestefar", "onkel", "tante", "datter",
+ "sønn", "søster", "bror", "nevø", "niese", "barnebarn", "fetter"]
+icefam = ["móðir", "faðir", "amma", "afi", "frændi", "frænka", "dóttir",
+ "sonur", "systir", "bróðir", "frændi", "frænka", "barnabarn","frændi"]
+afrikaansfam = ["moeder", "vader", "ouma", "Oupa", "oom", "tannie", "dogter",
+ "seun", "suster", "broer", "neef", "niggie", "kleinseun","kleindogter","neef",
+ "neef"]
 
 insert_word = []
 
@@ -433,47 +442,66 @@ def show_entry_fields():
    insert_word.append(e1.get())
 
 master = Tk()
-Label(master, text="Type in an expression for a family member in German, Danish, Dutch, English, Swedish, Norwegian or Icelandic!").grid(row=0)
+Label(master, text="Type in an expression for a family member in German, "
+	"Danish, Dutch, English, Swedish, Norwegian or Icelandic!").grid(row=0)
 
 e1 = Entry(master)
 
 e1.grid(row=0, column=1)
 
-Button(master, text='1. Step: Submit', command=show_entry_fields).grid(row=3, column=1, sticky=W, pady=4)
-Button(master, text='2. Step: Show flag', command=master.quit).grid(row=3, column=0, sticky=W, pady=4)
+Button(master, text='1. Step: Submit', command=show_entry_fields).grid(row=3,
+ column=1, sticky=W, pady=4)
+Button(master, text='2. Step: Show flag', command=master.quit).grid(row=3,
+ column=0, sticky=W, pady=4)
 
-mainloop( )
-
+mainloop()
+	
 def langvisual():
 	for i in insert_word:
+		languagefound = False
 		if i in germanfam:
-			print(germanflags())
+			languagefound = True
+			germanflags()
 			time.sleep(3)
 		if i in danishfam:
+			languagefound = True
 			turtle.clearscreen()
-			print(danishflag())
+			danishflag()
 			time.sleep(3)
 		if i in dutchfam:
+			languagefound = True
 			turtle.clearscreen()
-			print(dutchflags())
+			dutchflags()
 			time.sleep(3)
 		if i in englishfam:
+			languagefound = True
 			turtle.clearscreen()
-			print(englishflags())
+			englishflags()
 			time.sleep(3)
 		if i in swedishfam:
+			languagefound = True
 			turtle.clearscreen()
-			print(swedenflag())
+			swedenflag()
 			time.sleep(3)
 		if i in norfam:
+			languagefound = True
 			turtle.clearscreen()
-			print(norwayflag())
+			norwayflag()
 			time.sleep(3)
 		if i in icefam:
+			languagefound = True
 			turtle.clearscreen()
-			print(icelandflag())
+			icelandflag()
 			time.sleep(3)
-		else:
-			if i not in langlist:
-				print (falseentry())
-print(langvisual())
+		if i in afrikaansfam:
+			languagefound = True
+			turtle.clearscreen()
+			afrikaansflag()
+			time.sleep(3)
+
+		if languagefound != True:
+			falseentry()
+
+langvisual()
+
+
