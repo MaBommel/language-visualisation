@@ -117,6 +117,7 @@ def dutchflags():
 	title.goto(-50,270)
 	title.write("Dutch", font=("Arial",20, "bold"))
 	title.ht()	
+
 	#holland
 	holland = turtle.Turtle() 
 	holland.speed(10)
@@ -142,6 +143,7 @@ def germanflags():
 	title.goto(-50,270)
 	title.write("German", font=("Arial",20, "bold"))
 	title.ht()
+
 	#germany
 	germany = turtle.Turtle()      
 	germany.speed(10)
@@ -210,6 +212,7 @@ def englishflags():
 	title.goto(-50,270)
 	title.write("English (Some Examples)", font=("Arial",20, "bold"))
 	title.ht()
+
 	#uk
 	uk = turtle.Turtle()
 	uk.speed(10)
@@ -411,6 +414,7 @@ def afrikaansflag():
 	title.goto(-50,270)
 	title.write("Afrikaans", font=("Arial",20, "bold"))
 	title.ht()
+	
 	#namibia
 	nami = turtle.Turtle()
 	nami.speed(10)
